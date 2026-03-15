@@ -15,10 +15,10 @@ The workflow is divided into two stages:
 .
 ├── data/                # raw or intermediate data files
 ├── scripts/             # analysis scripts
-│   ├── create_window.py
+│   ├── save_window.py
 │   ├── plot_raw.py
 │   ├── plot_average.py
-│   └── plot_proportions.py
+│   └── plot_proportion.py
 └── README.md
 ```
 
@@ -27,7 +27,7 @@ The workflow is divided into two stages:
 Run the script:
 
 ```
-create_windows.py
+save_window.py
 ```
 
 This script:
@@ -74,7 +74,7 @@ Plots the average response across trials aligned to stimulus onset.
 ### 3. Proportion plots
 
 ```
-plot_proportions.py
+plot_proportion.py
 ```
 
 Computes proportion of trials that exhibit a particular motor response depending on the stimulus location and age.
@@ -86,9 +86,9 @@ Computes proportion of trials that exhibit a particular motor response depending
 Run the scripts in the following order:
 
 ```
-python create_windows.py
+python save_window.py
 python plot_raw.py
-python plot_proportions.py
+python plot_proportion.py
 python plot_average.py
 ```
 
