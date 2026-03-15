@@ -9,7 +9,7 @@ import pandas as pd
 
 def idx_ojimetro(target_string):
     # load responses visually determined
-    file = r'C:\Users\juryl\Downloads\degusTimev3.xlsx'
+    file = r'...\data\degusTimev3.xlsx'
     
     # read all sheets from the excel
     sheets = pd.read_excel(file, sheet_name=None, dtype=str)
