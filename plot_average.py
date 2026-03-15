@@ -5,8 +5,7 @@ Created on Wed Apr 17 15:07:47 2024
 @author: juryl
 """
 
-# plot individual trials parameter across time 
-
+# plot average speed per state and stimulus across time 
 
 import numpy as np 
 import matplotlib.pyplot as plt 
@@ -27,9 +26,6 @@ cor_age=[]
 for i in range(len(data)):
     cor_age.append(age[data[i,0]])
     
-    
-# remove one trial where speed is insane 
-# data = np.delete(data,147,axis=0)
 
 # parameters to plot 
 location = 1  # 1:up    0:down
@@ -84,7 +80,7 @@ for i in states:
     ids=data[part,1]
     target_string=ids[sta_]
     i_s,i_f=idx_ojimetro(target_string)
-    speed_state=speed_state[i_s,:]
+    speed_state=speed_state[i_s,:]   # change here to only consider one type of response trials
     #%%
     
     # values to plotspeed_state
@@ -108,21 +104,4 @@ for i in states:
     # plt.legend()
     stat_str=str(i)
     loc_str=str(location)
-    plt.savefig('C:/Users/juryl/Documents/degus/figures/avS'+loc_str+'_'+stat_str+'.pdf')
     k=k+1
-    
-
-# # plot only one state to show the outlayer 
-# plt.figure()
-# only_=data[:,0]=='AdultUp'
-# speed_part=data[only_,:]
-# for i in range(len(speed_part)):
-#     plt.plot(speed_part[i,4:])
-
-
-
-
-
-
-
-
