@@ -14,7 +14,7 @@ import matplotlib.patches as patches
 from scipy.stats import chi2_contingency, fisher_exact
 
 # important paths
-file_stim=r'...\data\degusTimev2.xlsx'
+file_stim='...\data\degusTimev2.xlsx'
 
 # binocular fields 
 bino=[25.5, 34.2,40.4, 54.2, 59.5]
