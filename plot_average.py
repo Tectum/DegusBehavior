@@ -13,8 +13,8 @@ import matplotlib.pyplot as plt
 from matplotlib import colormaps
 from func_help import idx_ojimetro
 
-# load data already aligned to stimulus onset and normalized
-file_data=r'C:\Users\juryl\Documents\degus\analysis_data\speed_all.npy'
+# load data already aligned to stimulus onset
+file_data='...\data\speed_all.npy'
 data=np.load(file_data, allow_pickle=True)
 data=np.delete(data, (168,169), axis=0)
 
