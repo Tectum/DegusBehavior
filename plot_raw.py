@@ -106,8 +106,7 @@ for i in id_part:
 
 plt.tight_layout()
 
-loc_str=str(location)
-plt.savefig('C:/Users/juryl/Documents/degus/figures/raw_down.pdf')
+
 
 
 
