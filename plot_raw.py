@@ -13,7 +13,7 @@ from matplotlib.colors import LinearSegmentedColormap
 # from matplotlib.pyplot import cm
 
 # load data already aligned to stimulus onset
-file_data=r'C:\Users\juryl\Documents\degus\analysis_data\speed_all.npy'
+file_data='...\data\speed_all.npy'
 data=np.load(file_data, allow_pickle=True)
 
 # load data from the baseline, all time before onset
