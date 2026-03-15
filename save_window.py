@@ -12,8 +12,8 @@ import os
 import math
 
 # important paths
-folder_tracking=r'C:\Users\juryl\Documents\degus\data'
-file_stim=r'C:\Users\juryl\Documents\degus\degusTime.xlsx'
+folder_tracking='...\data\trackingdata'
+file_stim='...\data\degusTime.xlsx'
 
 # parameters of videos 
 fs=30   # frames per second
@@ -149,4 +149,4 @@ par_all=par_all[only,:]
 
 
 # save the matrix with all the speeds and info
-np.save(r'C:\Users\juryl\Documents\degus\analysis_data\speed_all.npy',par_all)
+np.save('...\data\speed_all.npy',par_all)
