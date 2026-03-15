@@ -61,35 +61,10 @@ for i in states:
     tablenoF[loc_tableY[location],loc_tableX[age]]=trials_i-tableF[loc_tableY[location],loc_tableX[age]]
 
 
-bar_width=0.4  
-
-# bar plots superposed
-# fig = plt.figure(1,figsize=(3,2)) 
-# ax = fig.add_subplot(111)
-# ax.bar(np.arange(1,6,1), freeze[0,:], color='cyan', label='up', width=bar_width,edgecolor='k')   
-# ax.bar(np.arange(1,6,1)+bar_width, freeze[1,:], color='orange', label='down', width=bar_width, edgecolor='k')     
-# ax.set_ylabel('Prob. freeze')
-# ax.set_xticks(np.arange(1,6,1)+bar_width/2,['P5','P9','P15','P30', 'Adult'])
-# ax.spines[['right', 'top']].set_visible(False)
-# ax.set_ylim(0,1)
-# # ax.legend()   
-# fig.tight_layout()
-# fig.savefig('C:/Users/juryl/Documents/degus/figures/prob_freeze.pdf')
-
-# fig = plt.figure(2,figsize=(3,2)) 
-# ax = fig.add_subplot(111)
-# ax.bar(np.arange(1,6,1), scape[0,:], color='cyan', label='up', width=bar_width,edgecolor='k')   
-# ax.bar(np.arange(1,6,1)+bar_width, scape[1,:], color='orange', label='down', width=bar_width, edgecolor='k')     
-# ax.set_ylabel('Prob. scape')
-# ax.spines[['right', 'top']].set_visible(False)
-# ax.set_xticks(np.arange(1,6,1)+bar_width/2,['P5','P9','P15','P30', 'Adult'])
-# ax.set_ylim(0,1)
-# # ax.legend()   
-# fig.tight_layout()
-# fig.savefig('C:/Users/juryl/Documents/degus/figures/prob_scape.pdf')
-
     
 # scatter plots with fitting curve 
+
+# plot scape probability overhead looming
 toplot=scape[0,:]
 
 fig = plt.figure(1,figsize=(3,3)) 
@@ -136,9 +111,9 @@ ax.set_xticks(bino)
 values=[str(i) for i in bino[:-1]]
 values.append('adult')
 ax.set_xticklabels(values)
-# fig.savefig('C:/Users/juryl/Documents/degus/figures/escape_up.pdf')    
 
 
+# plot scape probability frontal looming
 toplot=scape[1,:]
 
 # fig = plt.figure(2,figsize=(2,3)) 
@@ -187,7 +162,7 @@ ax.set_xticklabels(values)
 # fig.savefig('C:/Users/juryl/Documents/degus/figures/escape_down.pdf')    
 fig.savefig('C:/Users/juryl/Documents/degus/figures/escape_both.pdf')   
 
-
+# plot freeze probability frontal looming
 toplot=freeze[0,:]
 
 fig = plt.figure(3,figsize=(3,3)) 
@@ -237,7 +212,7 @@ ax.set_xticklabels(values)
 # fig.savefig('C:/Users/juryl/Documents/degus/figures/freeze_up.pdf')    
 
 
-
+# plot freeze probability overhead looming
 toplot=freeze[1,:]
 
 # fig = plt.figure(4,figsize=(2,3)) 
@@ -284,8 +259,7 @@ ax.set_xticks(bino)
 values=[str(i) for i in bino[:-1]]
 values.append('adult')
 ax.set_xticklabels(values)
-# fig.savefig('C:/Users/juryl/Documents/degus/figures/freeze_down.pdf')  
-fig.savefig('C:/Users/juryl/Documents/degus/figures/freeze_both.pdf')    
+
 
 #%% statistics
 
