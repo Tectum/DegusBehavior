@@ -62,7 +62,7 @@ for i in states:
 
 
     
-# scatter plots with fitting curve 
+#%% scatter plots with fitting curve 
 
 # plot scape probability overhead looming
 toplot=scape[0,:]
@@ -159,10 +159,8 @@ ax.set_xticks(bino)
 values=[str(i) for i in bino[:-1]]
 values.append('adult')
 ax.set_xticklabels(values)
-# fig.savefig('C:/Users/juryl/Documents/degus/figures/escape_down.pdf')    
-fig.savefig('C:/Users/juryl/Documents/degus/figures/escape_both.pdf')   
 
-# plot freeze probability frontal looming
+# plot freeze probability overhead looming
 toplot=freeze[0,:]
 
 fig = plt.figure(3,figsize=(3,3)) 
@@ -212,7 +210,7 @@ ax.set_xticklabels(values)
 # fig.savefig('C:/Users/juryl/Documents/degus/figures/freeze_up.pdf')    
 
 
-# plot freeze probability overhead looming
+# plot freeze probability frontal looming
 toplot=freeze[1,:]
 
 # fig = plt.figure(4,figsize=(2,3)) 
